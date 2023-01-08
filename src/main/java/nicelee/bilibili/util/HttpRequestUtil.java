@@ -197,7 +197,6 @@ public class HttpRequestUtil {
 				inn = conn.getInputStream();
 			} catch (Exception e) {
 				e.printStackTrace();
-				// Logger.println(headers.get("range"));
 				BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getErrorStream()));
 				String temp;
 				while ((temp = reader.readLine()) != null) {
